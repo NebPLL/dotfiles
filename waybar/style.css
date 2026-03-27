@@ -1,0 +1,96 @@
+* {
+	font-family: JetbrainsMono Nerd Font;
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 1px 7px;
+	color: #EBCB8B;
+	/* Default Everforest fg1 */
+}
+
+/* Module rechts */
+.modules-right {
+	background-color: #2D353B;
+	/* Everforest bg0 */
+	border-radius: 4px;
+}
+
+/* Akku */
+#battery,
+#battery * {
+	color: inherit;
+}
+
+#battery .charging,
+#battery .charging *,
+#battery .plugged,
+#battery .plugged * {
+	color: #A7C080;
+	/* Everforest Grün */
+}
+
+#battery .not-charging,
+#battery .not-charging * {
+	color: #EBCB8B;
+}
+
+/* Module Mitte */
+.modules-center {
+	background-color: #2D353B;
+	/* bg0 */
+	border-radius: 4px;
+}
+
+/* Arbeitsflächen / Workspaces */
+#workspaces,
+#workspaces * {
+	background-color: #2D353B;
+	/* bg0 */
+	padding: 2px;
+	margin: 2px;
+	border-radius: 4px;
+	color: #EBCB8B;
+}
+
+#workspaces button {
+	min-width: 26px;
+	padding: 0;
+	margin: 0;
+	color: #EBCB8B;
+}
+
+/* Beispiel: Jedem Modul eine eigene Farbe geben */
+#network,
+#network * {
+	color: #8FA1B3;
+	/* sanftes Blau */
+}
+
+#volume,
+#volume * {
+	color: #DCA561;
+	/* warmes Orange */
+}
+
+#clock,
+#clock * {
+	color: #C5A4C9;
+	/* zartes Lila */
+}
+
+#temperature,
+#temperature * {
+	color: #E5786D;
+	/* leichtes Rot/Apricot */
+}
+
+#memory,
+#memory * {
+	color: #7FB77E;
+	/* beruhigendes Grün */
+}
+
+#cpu,
+#cpu * {
+	color: #E3B778;
+	/* helles Gelb-Orange */
+}
