@@ -1,7 +1,5 @@
--- ~/.config/nvim/lua/colors.lua
-
 local function ColorMyPencils(color)
-	color = color or "everforest"
+	color = color or "catppuccin-mocha"
 	vim.cmd.colorscheme(color)
 
 	-- Hintergrund setzen – dunkler Stil
@@ -13,51 +11,12 @@ local function ColorMyPencils(color)
 end
 
 return {
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 	{
-		"projekt0n/github-nvim-theme",
-	},
-
-	{
-		"kdheepak/monochrome.nvim",
-	},
-
-	{
-		"Abstract-IDE/Abstract-cs",
-	},
-
-	{
-		"neanias/everforest-nvim",
-		name = "everforest",
-		config = function()
-			require("everforest").setup({
-				disable_background = true, -- weil wir's manuell setzen
-				disable_float_background = true,
-				-- styles = {
-				-- bold = true,
-				-- italic = true,
-				-- transparency = true,
-				-- },
-			})
-			ColorMyPencils()
-		end,
-	},
-
-	{
-		"rose-pine/neovim",
-		name = "rose-pine",
+		"catppuccin/nvim",
+		name = "catppuccin",
 		priority = 1000,
-		lazy = false,
 		config = function()
-			require("rose-pine").setup({
-				disable_background = true, -- weil wir's manuell setzen
-				disable_float_background = true,
-				styles = {
-					bold = true,
-					italic = true,
-					transparency = true,
-				},
-			})
+			ColorMyPencils()
 		end,
 	},
 }
